@@ -34,3 +34,20 @@ function validarCorreo() {
     mensajeCorreo.style.color = "#e74c3c";
   }
 }
+
+let nombreInput = document.getElementById("nombre");
+let contador = document.getElementById("contador");
+
+nombreInput.addEventListener("input", function () {
+  contador.innerText = nombreInput.value.length + " caracteres";
+});
+
+function limpiarFormulario() {
+  document.getElementById("nombre").value = "";
+  document.getElementById("correo").value = "";
+
+  document.getElementById("resultado").innerText = "";
+  document.getElementById("mensajeCorreo").innerText = "";
+
+  document.getElementById("contador").innerText = "0 caracteres";
+}

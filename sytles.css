@@ -47,3 +47,12 @@ button {
 button:hover {
   background-color: #2980b9;
 }
+#contador {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+#resultado,
+#mensajeCorreo {
+  min-height: 20px;
+}

@@ -1,28 +1,49 @@
 <!doctype html>
+
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    ```
     <title>Bienvenido a mi Página Web</title>
 
-    <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" href="styles.css" />
+    ```
   </head>
+
   <body>
     <h1>Mi Primer Proyecto con Git</h1>
 
+    ```
     <p>Este proyecto fue publicado usando GitHub.</p>
+
     <p>Ingrese su nombre:</p>
-    <input type="text" id="nombre" placeholder="Escribe tu nombre" />
+
+    <input
+      type="text"
+      id="nombre"
+      placeholder="Escribe tu nombre"
+      maxlength="30"
+    />
+
+    <p id="contador">0 caracteres</p>
+
     <button onclick="saludar()">Saludar</button>
+
     <p id="resultado"></p>
 
     <h2>Formulario de contacto</h2>
+
     <input type="email" id="correo" placeholder="Ingrese su correo" />
+
     <button onclick="validarCorreo()">Validar correo</button>
+
     <p id="mensajeCorreo"></p>
 
-    <!-- Enlace al archivo JavaScript -->
+    <button onclick="limpiarFormulario()">Limpiar formulario</button>
+
     <script src="script.js"></script>
+    ```
   </body>
 </html>
